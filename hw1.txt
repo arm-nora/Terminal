@@ -1,0 +1,56 @@
+Terminal. HW_1
+
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir qa_theory
+3) Зайти в папку - cd qa_theory
+4) Создать 3 папки - mkdir hw1 hw2 hw3
+5) Зайти в любую папку - cd hw1
+6) Создать 5 файлов (3 txt, 2 json) - cat > ex1.txt cat > ex2.txt ca t> ex3.txt cat > doc.json cat > doc1.json
+или
+touch ex1.txt  ex2.txt  ex3.txt doc.json doc1.json
+7) Создать 3 папки - mkdir hw4 hw5 hw6
+8. Вывести список содержимого папки - ls -la
+9) + Открыть любой txt файл - cat ex1.txt
+10) + написать туда что-нибудь, любой текст - cat > ex1.txt
+name1
+name2
+name3
+11) + сохранить и выйти - ctrl+c
+12) Выйти из папки на уровень выше - cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку - mv hw1/ex1.txt hw1/ex2.txt hw3/
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку - cp hw1/doc.json hw1/doc1.json hw2/
+15) Найти файл по имени - find -name ex1.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает - tail -f ex2.txt | grep “1”
+или
+grep -n “1” ex2.txt
+17) вывести несколько первых строк из текстового файла - head -3 ex2.txt
+18) вывести несколько последних строк из текстового файла -  tail -3 ex2.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает - less ex2.txt
+20) вывести дату и время - date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+curl http://162.55.220.72:5005/terminal-hw-request
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+#!/bin/bash 
+mkdir qa_theory
+&& cd qa_theory1  
+&& mkdir hw1 hw2 hw3   
+&& cd hw1  
+&& touch ex1.txt ex2.txt ex3.txt doc.json doc1.json   
+&& mkdir hw4 hw5 hw6  
+&& ls -la  
+&& mv ex1.txt ex2.txt ../hw3/  
+
+
+./script.sh
+
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
+
